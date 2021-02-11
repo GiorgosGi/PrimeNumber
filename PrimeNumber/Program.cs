@@ -23,6 +23,7 @@ namespace PrimeNumber
             {
                 Console.WriteLine("Is a prime number");
             }
+
             else
             {
                 Console.WriteLine("Is not a prime number");

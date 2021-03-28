@@ -12,6 +12,11 @@ namespace PrimeNumber
         {
             Console.WriteLine("Enter an integer: ");
             int x = Convert.ToInt32(Console.ReadLine());
+            PrimeNum(x);
+        }
+
+        private static void PrimeNum(int x)
+        {
             int divider = 2;
 
             while (x % divider != 0)
@@ -21,12 +26,12 @@ namespace PrimeNumber
 
             if (divider == x)
             {
-                Console.WriteLine("Is a prime number");
+                Console.WriteLine($"{x} is a prime number");
             }
 
             else
             {
-                Console.WriteLine("Is not a prime number");
+                Console.WriteLine($"{x} is not a prime number");
             }
         }
     }
